@@ -56,7 +56,6 @@ std::string decrypt(std::string cypher, std::map<int,int> key){
 
 std::map<int,int> generateKey(std::string message){
     int index = 0;
-    std::pair<int, int> x;
     std::map<int,int> key;
     std::vector<int> usedAsciiCodes(message.begin(), message.end());
     std::sort(usedAsciiCodes.begin(), usedAsciiCodes.end());
